@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORES DO SITE */
+:root{
+    --cor-principal: #576e13;
+    --cor-secundaria: #FFFF00;
+    --cor-terciaria: #3A2F0B;
+    --cinza-bg: #F2F2F2;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--cinza-bg);
+}
+
+/* CABEÇALHO */
+header{
+    background: var(--cor-principal);
+    height: 5rem;
+    text-align: center;
+}
+#logo{
+    width: 9rem;
+}
+#links-header ul{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#links-header ul li{
+    list-style: none;
+   
+}
+#links-header li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+/* SLIDERS */
+
+/* PAGINA ALIMENTAÇÃO */
+
+
+
+/* PAGINA TRILHA */
+
