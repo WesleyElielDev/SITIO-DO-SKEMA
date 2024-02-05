@@ -72,7 +72,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 60px;
     color: var(--cor-terciaria);
     font-size: 30px;
 }
