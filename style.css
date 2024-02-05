@@ -41,7 +41,73 @@ header{
     color: white;
     text-decoration: none;
 }
-/* SLIDERS */
+
+/* BOTÃO VISITAR */
+.btnVisitar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btnVisitar button{
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--cor-terciaria);
+    color: var(--cinza-bg);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.btnVisitar button:hover{
+    width: 205px;
+    height: 45px;
+    font-size: 16px;
+}
+
+/* SEJA BEM- VINDO*/
+#bemVindo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: var(--cor-terciaria);
+    font-size: 30px;
+}
+.boxLocal{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+.bgBoxLocal{
+    width: 303px;
+    height: 203px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border: solid 2px var(--cor-principal);
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.bgBoxLocal img{
+    width: 300px;
+    height: 200px;
+    filter: blur(2px);
+    border-radius: 10px;
+}
+.nameBox{
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    margin-top: -50px !important;
+    color: var(--cinza-bg);
+    font-size: 25px;
+    background-color: var(--cor-principal);
+}
 
 /* PAGINA ALIMENTAÇÃO */
 
