@@ -72,46 +72,104 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 60px;
     color: var(--cor-terciaria);
     font-size: 30px;
 }
-.boxLocal{
+#bemVindo #localizacao{
+    font-size: 15px;
+}
+#bemVindo #sejaBemVindo{
+    font-size: 20px;
+}
+
+/* BOX ATRAÇÕES DO LOCAL */
+
+.containerLocal{
+    width: 100%;
+    height: 500px;
+    margin: 30px 0;
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
-    
+    align-items: center;
 }
-.bgBoxLocal{
-    width: 303px;
-    height: 203px;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    border: solid 2px var(--cor-principal);
-    border-radius: 10px;
-    cursor: pointer;
-    
-}
-.bgBoxLocal img{
+.containerLocal #boxComida {
     width: 300px;
-    height: 200px;
-    filter: blur(2px);
+    height: 360px;
     border-radius: 10px;
+    background: url(./images/comidas.jpg)center/cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: solid 2px var(--cor-terciaria) ;
+    cursor: pointer;
+    filter: contrast(2px);
+    transition: 1.2s;
 }
-.nameBox{
-    display: block;
-    text-align: center;
-    position: relative;
-    z-index: 10;
-    margin-top: -50px !important;
-    color: var(--cinza-bg);
+.containerLocal #boxAmbiente{
+    width: 300px;
+    height: 360px;
+    border-radius: 10px;
+    background: url(./images/ambiente\ \(1\).jpg)center/cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: solid 2px var(--cor-terciaria) ;
+    cursor: pointer;
+    filter: contrast(2px);
+    transition: 1.2s;
+}
+.containerLocal #boxComoChegar{
+    width: 300px;
+    height: 360px;
+    border-radius: 10px;
+    background: url(./images/viajar-de-carro-por-uma-estrada-ensolarada.jpg)center/cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: solid 2px var(--cor-terciaria) ;
+    cursor: pointer;
+    transition: 1.2s;
+}
+.containerLocal h4{
+    margin-top: 260px;
+    height: 30px;
+}
+.containerLocal #boxComida:hover, #boxAmbiente:hover, #boxComoChegar:hover{
     font-size: 25px;
-    background-color: var(--cor-principal);
 }
-
-/* PAGINA ALIMENTAÇÃO */
-
-
-
+/* SOBRE NÓS */
+.sobreNos{
+    display: flex;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background-color: #576e13;
+    width: 100vw;
+    height: 700px;
+}
+.sobreNos span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sobreNos h2{
+    font-size: 50px;
+}
+.sobreNos p{
+    font-size: 20px;
+}
+#textSobreNos{
+    margin: 10px 0 24px;
+    padding: 10px;
+}
+.sobreNos #textSobreNos{
+    width: 50%;
+}
+.sobreNos #imgSobreNos{
+    width: 50%;
+    height: 700px;
+    background: url(./images/sobre-nos.jpg)center/cover;
+}
 /* PAGINA TRILHA */
 
