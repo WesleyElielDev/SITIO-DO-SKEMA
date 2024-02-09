@@ -10,6 +10,7 @@
     --cor-secundaria: #FFFF00;
     --cor-terciaria: #3A2F0B;
     --cinza-bg: #F2F2F2;
+    --text-color: #fff;
 }
 
 body{
@@ -38,7 +39,7 @@ header{
 }
 #links-header li a{
     font-size: 18px;
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -49,7 +50,8 @@ header{
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    height: 50px;
+    height: 45px;
+   
 }
 .btnVisitar button{
     height: 40px;
@@ -75,6 +77,7 @@ header{
     justify-content: center;
     flex-direction: column;
     margin-top: 60px;
+    margin-bottom: 40px;
     color: var(--cor-terciaria);
     font-size: 30px;
 }
@@ -89,11 +92,11 @@ header{
 
 section.containerLocal{
     width: 100%;
-    height: 500px;
-    margin: 30px 0;
+    height: 360px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+   
 }
 section.containerLocal #boxComida {
     width: 360px;
@@ -102,11 +105,12 @@ section.containerLocal #boxComida {
     background: url(./images/comidas.jpg)center/cover;
     display: flex;
     justify-content: center;
-    color: white;
+    color: var(--text-color);
     border: solid 2px var(--cor-terciaria) ;
     cursor: pointer;
     filter: contrast(2px);
     transition: 1s;
+    text-shadow: 3px  3px 3px  rgba(0, 0, 0, 0.500);
 }
 section.containerLocal #boxAmbiente{
     width: 360px;
@@ -115,11 +119,12 @@ section.containerLocal #boxAmbiente{
     background: url(./images/ambiente\ \(1\).jpg)center/cover;
     display: flex;
     justify-content: center;
-    color: white;
+    color: var(--text-color);
     border: solid 2px var(--cor-terciaria) ;
     cursor: pointer;
     filter: contrast(2px);
     transition: 1s;
+    text-shadow: 3px  3px 3px  rgba(0, 0, 0, 0.500);
 }
 section.containerLocal #boxComoChegar{
     width: 360px;
@@ -128,11 +133,12 @@ section.containerLocal #boxComoChegar{
     background: url(./images/viajar-de-carro-por-uma-estrada-ensolarada.jpg)center/cover;
     display: flex;
     justify-content: center;
-    color: white;
+    color: var(--text-color);
     border: solid 2px var(--cor-terciaria) ;
     cursor: pointer;
     transition: 1s;
     z-index: 1 !important;
+    text-shadow: 3px  3px 3px  rgba(0, 0, 0, 0.500);
 }
 section.containerLocal h4{
     margin-top: 260px;
@@ -145,12 +151,12 @@ section.containerLocal #boxComida:hover, #boxAmbiente:hover, #boxComoChegar:hove
 /* SOBRE NÓS */
 .sobreNos{
     display: flex;
-    color: white;
-    margin-top: 60px;
+    color: var(--text-color);
+    margin-top: 30px;
     margin-bottom: 30px;
-    background-color: #576e13;
+    background-color: var(--cor-principal);
     width: 100vw;
-    height: 700px;
+    height: 600px;
 }
 .sobreNos span{
     font-size: 20px;
@@ -171,8 +177,44 @@ section.containerLocal #boxComida:hover, #boxAmbiente:hover, #boxComoChegar:hove
 }
 .sobreNos #imgSobreNos{
     width: 50%;
-    height: 700px;
-    background: url(./images/sobre-nos.jpg)center/cover;
+    height: 600px;
+    background: url(./images/mulher-comendo-alegre\ \(1\).jpg)center/cover;
+}
+
+#iconArrow{
+    text-align: center;
+    font-size: 30px;
+    color: var(--cor-terciaria);
+    height: 30px;
+}
+/* FOTO DO LOCAL */
+section.fotoLocal{
+   height: 250px;
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+#boxFotoLocal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 95%;
+    border-radius: 3px;
+    background: url(./images/venha-visitar.jpg)center/cover;
+    color: var(--text-color);
+    flex-direction: column;
+}
+#boxFotoLocal h4{
+    text-shadow: 3px  3px 3px  rgba(0, 0, 0, 0.500);
+    font-size: 35px; 
+}
+#boxFotoLocal span{
+    text-shadow: 3px  3px 3px  rgba(0, 0, 0, 0.500); 
+    font-size: 20px;
+    font-weight: 500;
 }
 /* PAGINA TRILHA */
 
