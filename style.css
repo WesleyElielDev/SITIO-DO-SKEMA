@@ -216,5 +216,92 @@ section.fotoLocal{
     font-size: 20px;
     font-weight: 500;
 }
-/* PAGINA TRILHA */
-
+/* DEPOIMENTOS */
+section.depoimentos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #576e13ae;
+    text-align: center;
+    width: 100%;
+}
+.depoimentos img{
+    width: 30%;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+#textDepoimentos{
+    font-size: 25px;
+    color: var(--text-color);
+    margin: 15px auto;
+    text-shadow: 3px  3px 3px  rgba(0, 0, 0, 0.500); 
+}
+#imgDepoimentos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.depoimentos a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 15px auto;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    height: 25px;
+    transition: 0.7s;
+}
+.depoimentos a:hover{
+    font-size: 25px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: var(--cor-principal);
+    margin-top: 30px;
+}
+.footerLogo img{
+    width: 200px;
+}
+.footerLista{
+   display: flex;
+   justify-content: center;
+}
+.footerLista ul li{
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.footerMidias{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 250px;
+   justify-content: center;
+   align-items: center;
+}
+.footerMidias #footerWhatsapp button{
+    margin: auto;
+    background-color: rgb(21, 255, 0);
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+}
+.footerMidias #footerInstagram button{
+    margin-top: 30px;
+    background: linear-gradient(blueviolet,rgb(255, 33, 70));
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    color: whitesmoke;
+}
