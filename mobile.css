@@ -1,0 +1,114 @@
+@media (max-width: 600px){
+
+/* HEADER */
+
+
+/* SLIDE */
+
+
+/* SEJA BEM VINDO */
+#bemVindo{
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    width: auto;
+    flex-wrap: nowrap;
+}
+#bemVindo #localizacao{
+    font-size: 8px;
+    font-weight: 500;
+}
+#bemVindo #sejaBemVindo{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* CONTAINER LOCAL */
+section.containerLocal{
+    flex-direction: column;
+   justify-content: space-around;
+   height: auto;
+}
+section.containerLocal #boxComida {
+    width: 60%;
+    height: 60%;
+    margin: 15px auto;
+}
+section.containerLocal #boxAmbiente {
+    width: 60%;
+    height: 60%;
+    margin: 15px auto;
+}
+section.containerLocal #boxComoChegar {
+    width: 60%;
+    height: 60%;
+    margin: 15px auto;
+}
+/* QUEM SOMOS */
+section.sobreNos{
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    align-items: center;
+}
+.sobreNos span{
+    font-size: 15px;
+    font-weight: 500;
+}
+.sobreNos h2{
+    font-size: 30px;
+    width: 90%;
+}
+.sobreNos p{
+    font-size: 15px;
+    width: 90%;
+    
+}
+#textSobreNos{
+    margin: 10px auto 24px;
+    padding: 10px;
+}
+.sobreNos #textSobreNos{
+    width: 90%;
+    flex-wrap: nowrap;
+}
+.sobreNos #imgSobreNos{
+    width: 95%;
+    height: 70%x;
+}
+/* BOX CONVITE */
+
+#boxFotoLocal h4{
+    text-shadow: 3px  3px 3px  rgba(0, 0, 0, 0.500);
+    font-size: 23px; 
+}
+#boxFotoLocal span{
+    text-shadow: 3px  3px 3px  rgba(0, 0, 0, 0.500); 
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* DEPOIMENTOS */
+#textDepoimentos{
+    font-size: 15px;
+}
+#imgDepoimentos{
+    flex-direction: column;
+}
+#imgDepoimentos img{
+    width: 60%;
+}
+
+/* FOOTER */
+footer{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+}
