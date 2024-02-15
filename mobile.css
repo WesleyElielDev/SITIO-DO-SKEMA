@@ -1,26 +1,46 @@
 @media (max-width: 600px){
 
 /* HEADER */
-
+.header-desk{
+    display: none;
+}
+.header-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-mobile #menuHeader{
+    font-size: 3rem;
+    margin-right: 15px;
+    color: white;
+    cursor: pointer;
+}
 
 /* SLIDE */
-
-
+.img-mobile{
+    display: block;
+}
+.img-desk{
+    display: none;
+}
+.nav-manual, .nav-auto{
+    margin-top: 60%;
+}
 /* SEJA BEM VINDO */
 #bemVindo{
     justify-content: center;
     align-items: center;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     width: auto;
     flex-wrap: nowrap;
 }
 #bemVindo #localizacao{
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 500;
 }
 #bemVindo #sejaBemVindo{
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -31,17 +51,17 @@ section.containerLocal{
    height: auto;
 }
 section.containerLocal #boxComida {
-    width: 60%;
+    width: 70%;
     height: 60%;
     margin: 15px auto;
 }
 section.containerLocal #boxAmbiente {
-    width: 60%;
+    width: 70%;
     height: 60%;
     margin: 15px auto;
 }
 section.containerLocal #boxComoChegar {
-    width: 60%;
+    width: 70%;
     height: 60%;
     margin: 15px auto;
 }
@@ -98,7 +118,7 @@ section.sobreNos{
     flex-direction: column;
 }
 #imgDepoimentos img{
-    width: 60%;
+    width: 80%;
 }
 
 /* FOOTER */

@@ -19,6 +19,9 @@ body{
 }
 
 /* CABEÇALHO */
+.header-mobile{
+    display: none;
+}
 header{
     background: var(--cor-principal);
     height: 5rem;
@@ -42,7 +45,46 @@ header{
     color: var(--text-color);
     text-decoration: none;
 }
+/* ASIDE NAVEGAR MOBILE*/
+aside.navegarMobile{
+    position: absolute;
+    z-index: 9999;
+    width: 35%;
+    height: auto;
+    background-color:#576e13f3;
+    display: none;
+    justify-content: center;
+    transition: 0.2s;
+    border-bottom-right-radius: 100px;
+    animation: menuMobile 1s forwards;
+}
+aside.navegarMobile.active{
+    display: flex;
+}
+@keyframes menuMobile{
+    from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
 
+aside.navegarMobile ul li{
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--text-color);
+}
+#closeBtn{
+    color: var(--text-color);
+    font-size: 30px;
+}
+aside.navegarMobile a{
+    color: var(--text-color);
+    text-decoration: none;
+}
 /* BOTÃO VISITAR */
 .btnVisitar{
     display: flex;
@@ -141,7 +183,7 @@ section.containerLocal #boxComoChegar{
     text-shadow: 3px  3px 3px  rgba(0, 0, 0, 0.500);
 }
 section.containerLocal h4{
-    margin-top: 260px;
+    margin-top: 250px;
     height: 30px;
 }
 
@@ -293,5 +335,11 @@ footer{
     border-radius: 10px;
     cursor: pointer;
     color: var(--text-color);
+}
+.assinatura{
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.607);
+    margin-bottom: 20px;
 }
 

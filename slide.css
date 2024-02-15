@@ -5,7 +5,9 @@ section.slider{
     padding: 0 !important;
     overflow: hidden;
 }
-
+.img-mobile{
+    display: none;
+}
 .slider-content{
     width: 400%;
     height: auto;

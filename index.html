@@ -14,8 +14,8 @@
     <title>Sítio so Skema </title>
 </head>
 <body>
-   <header>
-    
+
+   <header class="header-desk">
     <nav id="links-header">
         <ul>
             <li>
@@ -40,6 +40,37 @@
     </nav>
    </header>
 
+   <header class="header-mobile">
+
+    <a href="#"><img src="./images/logo-sitio-skema.png" alt="Logo Sítio do Skema" id="logo"></a>
+
+    <ion-icon name="menu-outline" onclick="openNav()" id="menuHeader"></ion-icon>
+
+   </header>
+
+   <aside class="navegarMobile">
+    <ul>
+        <li>
+            <a href="#">HOME</a>
+        </li>
+        <li>
+            <a href="#">SOBRE NÓS</a>
+        </li>
+        <li>
+            <a href="https://www.google.com/maps/dir//Rodovia+MG+259,+Km+189+-+Santo+Ant%C3%B4nio+do+Pontal,+Gov.+Valadares+-+MG,+35101-000/@-18.7877057,-42.1807062,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0xb1a328f097663f:0x47f54e1b276a54c!2m2!1d-42.0983045!2d-18.7877238?entry=ttu" target="_blank">LOCALIZAÇÃO</a>
+        </li>
+        <li>
+            <a href="https://api.whatsapp.com/message/3RAZV2JQVRXEC1?autoload=1&app_absent=0" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/sitiodoskema?igsh=bWZ0emFwdWp3eGE2" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>   
+        <li>
+            <ion-icon name="close-outline" onclick="closeMenu()" id="closeBtn"></ion-icon>
+        </li> 
+    </ul>
+   </aside>
+
  <section class="slider">
     <div class="slider-content">
 
@@ -48,18 +79,21 @@
             <input type="radio" name="radio-btn" id="radio3">
 
             <div class="slide-box primeiro">
-                <img src="./images/bolo-desk (1).jpg" alt="deliciosos sucos de todos os sabores">
+                <img class="img-desk" src="./images/bolo-desk (1).jpg" alt="deliciosos sucos de todos os sabores">
+                <img class="img-mobile" src="./images/slide-bolo-mbl.jpg" alt="deliciosos sucos de todos os sabores">
                
             </div>
 
             <div class="slide-box">
-                <img id="slide-2" src="./images/coruja-desk.jpg" alt="coruja em meio aos galhos de uma árvore">
+                <img class="img-desk" src="./images/coruja-desk.jpg" alt="coruja em meio aos galhos de uma árvore">
+                <img class="img-mobile" src="./images/slide-coruja-mbl.jpg" alt="coruja em meio aos galhos de uma árvore">
                 
             </div>
 
 
             <div class="slide-box">
-                <img id="slide-3" src="./images/suco-desk.jpg" alt="delicioso bolo com cobertura e confetes">
+                <img class="img-desk" src="./images/suco-desk.jpg" alt="delicioso bolo com cobertura e confetes">
+                <img class="img-mobile" src="./images/slide-sucos-mbl.jpg" alt="delicioso bolo com cobertura e confetes">
                
             </div> 
 
@@ -76,9 +110,7 @@
             </div>
     </div>
  </section>       
- <!--
 
-  -->  
  <div id="bemVindo">
     <span id="sejaBemVindo">SEJA BEM VINDO!</span>
     <h2>Lanchonete Sítio do Skema</h2>
@@ -150,6 +182,10 @@
 
 </section>
 
+<div class="btnVisitar">
+    <button>QUERO CONHECER</button>
+</div>
+
    <footer>
 
     <div class="footerLogo">
@@ -178,6 +214,7 @@
         
     </div>
 
+    <a href="" class="assinatura">Desenvolvido por: <br>Wesley Eliel</a>
    </footer>
    <script src="./script.js"></script>
 </body>
