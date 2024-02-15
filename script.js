@@ -16,4 +16,9 @@ function proximaImg(){
 }
 
 //ABRIR MENU MOBILE
+const navegarMobile = document.getElementsByClassName("navegarMobile")
 
+function openNav(){
+   
+    
+}
