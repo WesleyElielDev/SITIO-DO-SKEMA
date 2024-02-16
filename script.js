@@ -16,9 +16,13 @@ function proximaImg(){
 }
 
 //ABRIR MENU MOBILE
-const navegarMobile = document.getElementsByClassName("navegarMobile")
+const navegarMobile = document.querySelector('.navegarMobile')
 
-function openNav(){
-   
-    
+function openNav() {
+    navegarMobile.classList.add('active')
 }
+
+function closeMenu(){
+    navegarMobile.classList.remove('active')
+}
+

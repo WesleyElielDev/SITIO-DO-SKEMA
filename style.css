@@ -56,7 +56,7 @@ aside.navegarMobile{
     justify-content: center;
     transition: 0.2s;
     border-bottom-right-radius: 100px;
-    animation: menuMobile 1s forwards;
+    animation: menuMobile 1s  forwards;
 }
 aside.navegarMobile.active{
     display: flex;
@@ -80,6 +80,7 @@ aside.navegarMobile ul li{
 #closeBtn{
     color: var(--text-color);
     font-size: 30px;
+    cursor: pointer;
 }
 aside.navegarMobile a{
     color: var(--text-color);
@@ -104,13 +105,20 @@ aside.navegarMobile a{
     color: var(--cinza-bg);
     cursor: pointer;
     font-size: 15px;
-    transition: 0.2s;
+    animation: pulse 1.5s infinite;
 }
-.btnVisitar button:hover{
-    width: 205px;
-    height: 45px;
-    font-size: 16px;
-}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+
+  }
 
 /* SEJA BEM- VINDO*/
 #bemVindo{
@@ -195,7 +203,6 @@ section.containerLocal #boxComida:hover, #boxAmbiente:hover, #boxComoChegar:hove
     display: flex;
     color: var(--text-color);
     margin-top: 30px;
-    margin-bottom: 30px;
     background-color: var(--cor-principal);
     width: 100vw;
     height: 600px;
@@ -229,6 +236,7 @@ section.containerLocal #boxComida:hover, #boxAmbiente:hover, #boxComoChegar:hove
     color: var(--cor-terciaria);
     height: 30px;
 }
+
 /* FOTO DO LOCAL */
 section.fotoLocal{
    height: 250px;
