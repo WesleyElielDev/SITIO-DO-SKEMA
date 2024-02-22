@@ -53,7 +53,7 @@ aside.navegarMobile{
     height: auto;
     background-color:#576e13f3;
     display: none;
-    justify-content: center;
+    justify-content: cente;
     transition: 0.2s;
     border-bottom-right-radius: 100px;
     animation: menuMobile 1s  forwards;
@@ -72,10 +72,13 @@ aside.navegarMobile.active{
 
 aside.navegarMobile ul li{
     list-style: none;
-    text-align: center;
+    margin-left: 5px;
     margin-top: 50px;
     margin-bottom: 50px;
     color: var(--text-color);
+}
+aside.navegarMobile a:hover {
+    color: #3A2F0B;
 }
 #closeBtn{
     color: var(--text-color);
@@ -85,6 +88,7 @@ aside.navegarMobile ul li{
 aside.navegarMobile a{
     color: var(--text-color);
     text-decoration: none;
+    transition: 0.3s;
 }
 /* BOTÃO VISITAR */
 .btnVisitar{
