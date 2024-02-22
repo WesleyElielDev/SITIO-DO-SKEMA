@@ -16,6 +16,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     background: var(--cinza-bg);
+    overflow-x: hidden;
 }
 
 /* CABEÇALHO */
@@ -26,6 +27,9 @@ header{
     background: var(--cor-principal);
     height: 5rem;
     text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
 }
 #logo{
     width: 9rem;
@@ -47,7 +51,7 @@ header{
 }
 /* ASIDE NAVEGAR MOBILE*/
 aside.navegarMobile{
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     width: 35%;
     height: auto;
@@ -156,7 +160,7 @@ section.containerLocal #boxComida {
     width: 360px;
     height: 360px;
     border-radius: 10px;
-    background: url(./images/comidas.jpg)center/cover;
+    background: url(./images/comida-2.0.jpg)center/cover;
     display: flex;
     justify-content: center;
     color: var(--text-color);
@@ -170,7 +174,7 @@ section.containerLocal #boxAmbiente{
     width: 360px;
     height: 360px;
     border-radius: 10px;
-    background: url(./images/ambiente\ \(1\).jpg)center/cover;
+    background: url(./images/ambiente-2.0\ \(1\).jpg)center/cover;
     display: flex;
     justify-content: center;
     color: var(--text-color);
@@ -184,7 +188,7 @@ section.containerLocal #boxComoChegar{
     width: 360px;
     height: 360px;
     border-radius: 10px;
-    background: url(./images/viajar-de-carro-por-uma-estrada-ensolarada.jpg)center/cover;
+    background: url(./images/beautiful-countryside-road-greenery-forests\ \(1\).jpg)center/cover;
     display: flex;
     justify-content: center;
     color: var(--text-color);
