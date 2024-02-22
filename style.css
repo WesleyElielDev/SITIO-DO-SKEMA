@@ -57,7 +57,7 @@ aside.navegarMobile{
     height: auto;
     background-color:#576e13f3;
     display: none;
-    justify-content: cente;
+    margin-top: 5rem;
     transition: 0.2s;
     border-bottom-right-radius: 100px;
     animation: menuMobile 1s  forwards;
@@ -149,7 +149,7 @@ aside.navegarMobile a{
 /* BOX ATRAÇÕES DO LOCAL */
 
 section.containerLocal{
-    width: 100%;
+    width: 100vw;
     height: 360px;
     display: flex;
     justify-content: space-around;
@@ -248,7 +248,7 @@ section.containerLocal #boxComida:hover, #boxAmbiente:hover, #boxComoChegar:hove
 /* FOTO DO LOCAL */
 section.fotoLocal{
    height: 250px;
-   width: 100%;
+   width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,7 +281,7 @@ section.depoimentos{
     flex-wrap: wrap;
     background-color: #576e13ae;
     text-align: center;
-    width: 100%;
+    width: 100vw;
 }
 .depoimentos img{
     width: 30%;
@@ -317,7 +317,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 200px;
     background-color: var(--cor-principal);
     margin-top: 30px;
